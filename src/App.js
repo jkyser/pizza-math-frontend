@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import EqForm from './components/EqForm';
+import Navbar from './components/Navbar';
 
-function App() {
+const App = () => {
+  const [newEq, setNewEq] = useState(''); // equation text input
+  const [imgSrc, setNewImgSrc] = useState('');  // for displaying the image from matplotlib
+
+  // for updating and tracking the change of the input element
+  const handleTextChange = (e) => {
+    setNewEq(e.target.value);
+  }
+
+  // attributes for the equation form, all bundled up into a nice object
+  const eqFormAttr = {
+    changeHandler: handleTextChange,
+    placeholder: "Enter your equation",
+    value: newEq
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      {/*Right side of the page containing the answers to everything and the graph of the equation*/}
+      <div>
+        <img src={imgSrc} alt="graph will appear here" />
+      </div>
+
+
+      {/*Right side of the page containing the options for equation input*/}
+      <div>
+        <EqForm attr={eqFormAttr} />
+      </div>
+    </>
   );
 }
 
