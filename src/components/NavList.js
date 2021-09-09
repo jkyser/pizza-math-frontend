@@ -3,7 +3,7 @@ import NavElement from './NavElement';
 
 const NavList = () => {
     return (
-        <ul>
+        <ul className="navbar-nav">
             <NavElement />
             <NavElement />
             <NavElement />
