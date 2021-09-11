@@ -5,7 +5,7 @@ const CalculatorKey = ({value, handler}) => {
 
     if (buttonsToDisable.includes(value)) {
         return (
-            <button className="btn btn-outline-secondary calc-keys fw-bold border-2" 
+            <button className="btn btn-light calc-keys fw-bold border-2" 
                     value={value}
                     onClick={handler}
                     disabled>
@@ -15,7 +15,7 @@ const CalculatorKey = ({value, handler}) => {
     }
 
     return (
-        <button className="btn btn-outline-secondary calc-keys fw-bold border-2" 
+        <button className="btn btn-light calc-keys fw-bold border-2" 
                 value={value}
                 onClick={handler}>
             {value}

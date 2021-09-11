@@ -1,13 +1,10 @@
 import React from 'react';
 import NavElement from './NavElement';
 
-const NavList = () => {
+const NavList = ({list}) => {
     return (
         <ul className="navbar-nav">
-            <NavElement />
-            <NavElement />
-            <NavElement />
-            <NavElement />
+            {list.map(item => <NavElement item={item} />)}
         </ul>
     );
 }

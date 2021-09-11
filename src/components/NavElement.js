@@ -1,9 +1,9 @@
 import React from 'react';
 
-const NavElement = () => {
+const NavElement = ({item}) => {
     return (
         <li className="nav-item">
-            <a className="nav-link text-dark" href="#">Random link</a>
+            <a className="nav-link fw-bold" href="#">{item}</a>
         </li>
     );
 }

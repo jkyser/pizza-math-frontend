@@ -81,7 +81,7 @@ const Calculator = () => {
     }
 
     return (
-        <div className="col-md-12 col-lg-4 bg-light rounded shadow-sm border">
+        <div className="col-md-12 col-lg-3 bg-secondary rounded shadow border-dark">
             {/*Screen portion of the calculator */}
             <div className="h-25 w-100 mt-3 p-2 bg-white rounded border d-flex align-items-center active-screen-input"
                  id="screen"
@@ -90,16 +90,18 @@ const Calculator = () => {
             </div>
 
             {/*Key portion of the calculator */}
-            {calcKeyValues.map((row, i) => {
-                return (
-                    <div key={i} className="d-flex justify-content-around mt-4">
-                        {row.map((value, j) => <CalculatorKey key={j} value={value} handler={handleCalculatorInput} />)}
-                    </div>
-                );
-            })}
+            <div className="h-75 d-flex flex-column justify-content-evenly">
+                {calcKeyValues.map((row, i) => {
+                    return (
+                        <div key={i} className="d-flex justify-content-around">
+                            {row.map((value, j) => <CalculatorKey key={j} value={value} handler={handleCalculatorInput} />)}
+                        </div>
+                    );
+                })}
 
-            <div className="d-grid mt-3 mx-4">
-                <button className="btn btn-secondary fw-bold border-2" type="button" onClick={submitLinearEquation}>SOLVE</button>
+                <div className="d-grid mx-4">
+                    <button className="btn btn-light fw-bold border-2" type="button" onClick={submitLinearEquation}>SOLVE</button>
+                </div>
             </div>
         </div>
     );

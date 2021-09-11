@@ -81,6 +81,7 @@ function _requestLinearEqGraph(x, y) {
         height: 400
     };
 
+    // send request to graphing microservice
     fetch('https://pacific-castle-72671.herokuapp.com/basic/linegraph', {
         method: 'POST',
         headers: {
@@ -90,6 +91,7 @@ function _requestLinearEqGraph(x, y) {
     })
     .then((response) => response.text())
     .then((response) => {
+        // set response base64 string as the new image source
         document.getElementById('lineareq-graph').setAttribute('src', `data:image/png;base64,${response}`)
     });
 }
