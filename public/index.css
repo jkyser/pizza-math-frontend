@@ -5,3 +5,14 @@ html, body, #root {
 .calc-keys {
     width: 15%;
 }
+
+/* Shows which screen input is active */
+.active-screen-input {
+    box-shadow: 1px 1px 3px grey;
+}
+
+/* Creates a superscript font for indicating something is being raised to the power */
+.superscript {
+    font-weight: 0.5em;
+    transform: translateY(-10px);
+}

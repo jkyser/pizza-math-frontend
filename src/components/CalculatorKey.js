@@ -1,8 +1,23 @@
 import React from 'react';
 
-const CalculatorKey = ({value}) => {
+const CalculatorKey = ({value, handler}) => {
+    const buttonsToDisable = ['(', ')', '^', '/', '*', 'var', 'n!', '.', 'sqrt'];
+
+    if (buttonsToDisable.includes(value)) {
+        return (
+            <button className="btn btn-outline-secondary calc-keys fw-bold border-2" 
+                    value={value}
+                    onClick={handler}
+                    disabled>
+                {value}
+            </button>
+        );
+    }
+
     return (
-        <button className="btn btn-outline-secondary calc-keys fw-bold border-2" value={value}>
+        <button className="btn btn-outline-secondary calc-keys fw-bold border-2" 
+                value={value}
+                onClick={handler}>
             {value}
         </button>
     );
