@@ -1,0 +1,39 @@
+html, body {
+    height: 100%;
+}
+
+#root {
+    background-color: #FEFEFA;
+}
+
+.calculator {
+    background-color: hsl(12, 100%, 18%);
+}
+
+.navbar {
+    background-color: hsl(12, 100%, 18%);
+}
+
+.calc-keys {
+    width: 15%;
+}
+
+/* Highlights nav link when hovered over */
+.nav-link {
+    color: white;
+}
+.nav-link:hover {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+/* Shows which screen input is active */
+.active-screen-input {
+    box-shadow: 1px 1px 3px grey;
+}
+
+/* Creates a superscript font for indicating something is being raised to the power */
+.superscript {
+    font-weight: 0.5em;
+    transform: translateY(-10px);
+}
