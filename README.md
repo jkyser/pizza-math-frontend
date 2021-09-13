@@ -1,74 +1,51 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Pizza Math
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Pizza math, a web application used to solve and graph math equations! While the 
+application is not finished, I am currently working on adding more and more functionality
+every day!
 
-## Available Scripts
+Check it out at the link below!!!
+https://pizza-math.netlify.app/
 
-In the project directory, you can run:
+## Tech used in this project
 
-### `npm start`
+**Front-end technologies**
+- React.js
+- Bootstrap 5
+- Javascript
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**Back-end Technologies**
+- Java
+- Spring Boot
+- JUnit
+- JFreeChart
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Other Tech used**
+- Git
+- GitHub (obviously)
+- Heroku (deployment of back-end APIs)
+- Netlify (deployment of front-end)
 
-### `npm test`
+## Highlights of the project
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project is using a microservices approach with the form of communication being HTTP requests to
+APIs. One microservice is the graphing microservice, and the other microservice is the equation solver.
+The final refactor of the linear equation solving microservice implemented a Test-Driven Development approach
+where unit tests were written before the code. The front-end was recently refactored with React and Bootstrap
+to produce a better user experience, with the highlight of the project being the calculator!
 
-### `npm run build`
+## Future Improvements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Implement more functionality into the equation solver (it only solves addition/subtraction based equations currently)
+- Refactor the graphing microservice to use Django/Matplotlib/Python
+- Refactor the microservices to communicate via RabbitMQ (or something similar) instead of HTTP requests
+- Implement other math equation solving (quadratics, solve for x, calculus)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Stretch goals for future improvement
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- 3D graphing
+- openGL implementation for cool graphing graphics
+- Interactive lessons (very stretch goal)
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# pizza-math-frontend
->>>>>>> ddf368400e0171cc23c966ce9c61134c73b1c065
+I love math and this is something I will keep coming back to work on, so I want to eventually get to the point where
+I implement these stretch goals! Thanks for looking at my project!
